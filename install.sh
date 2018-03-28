@@ -20,6 +20,10 @@ function install_PACKAGES {
 
 }
 
+function configure {
+  
+  echo -e "exec --no-startup-id opera" >> ~/.config/i3/config 
+}
 
 function main {
   install_PACKAGES
