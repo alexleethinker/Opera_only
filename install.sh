@@ -6,7 +6,7 @@ function install_PACKAGES {
   echo ""
 
   echo "Installing packages"
-  sudo apt install -y software-properties-common fcitx fcitx-rime ttf-wqy-zenhei
+  sudo apt install -y software-properties-common fcitx ttf-wqy-zenhei
   sudo apt install -y xorg
   sudo apt install -y sakura
   sudo apt install -y network-manager-gnome volumeicon-alsa pulseaudio pavucontrol fonts-arphic-uming
