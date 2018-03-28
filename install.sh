@@ -10,7 +10,6 @@ function install_PACKAGES {
   # GNU/UI
     xorg \
     sakura \
-    sddm \
     software-properties-common \
     ttf-wqy-zenhei \
     fcitx \
@@ -33,6 +32,7 @@ function install_PACKAGES {
   wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
   sudo apt update
   sudo apt -y install opera-stable
+  sudo apt -y install sddm
 
 }
 
