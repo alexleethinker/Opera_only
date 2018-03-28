@@ -18,10 +18,7 @@ function install_PACKAGES {
     volumeicon-alsa \
     pulseaudio \
     pavucontrol \
-    fonts-arphic-uming\
-    
-  # i3 
-    i3 \
+    fonts-arphic-uming \
     conky \
     
   # pinyin
@@ -33,6 +30,7 @@ function install_PACKAGES {
   sudo apt update
   sudo apt -y install opera-stable
   sudo apt -y install sddm
+  sudo apt -y install i3
 
 }
 
