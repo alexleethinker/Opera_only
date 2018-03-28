@@ -6,30 +6,16 @@ function install_PACKAGES {
   echo ""
 
   echo "Installing packages"
-  sudo apt-get install -y \
-  # GNU/UI
-    xorg \
-    sakura \
-    software-properties-common \
-    ttf-wqy-zenhei \
-    fcitx \
-    fcitx-rime \
-    network-manager-gnome \
-    volumeicon-alsa \
-    pulseaudio \
-    pavucontrol \
-    fonts-arphic-uming \
-    conky \
-    
-  # pinyin
-    fcitx-googlepinyin
-  echo ""
-  
+  sudo apt install -y software-properties-common fcitx fcitx-rime ttf-wqy-zenhei
+  sudo apt install -y xorg
+  sudo apt install -y sakura
+  sudo apt install -y network-manager-gnome volumeicon-alsa pulseaudio pavucontrol fonts-arphic-uming
+  sudo apt install -y fcitx-googlepinyin
   sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
   wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
   sudo apt update
   sudo apt -y install opera-stable
-  sudo apt -y install i3
+  sudo apt -y install i3 conky
   sudo apt -y install sddm
 
 }
