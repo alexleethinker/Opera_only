@@ -29,8 +29,8 @@ function install_PACKAGES {
   wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
   sudo apt update
   sudo apt -y install opera-stable
-  sudo apt -y install sddm
   sudo apt -y install i3
+  sudo apt -y install sddm
 
 }
 
