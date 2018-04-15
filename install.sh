@@ -9,6 +9,7 @@ function install_PACKAGES {
   sudo apt install -y software-properties-common fcitx ttf-wqy-zenhei
   sudo apt install -y xorg
   sudo apt install -y sakura
+  sudo apt install -y xfce4-power-manager 
   sudo apt install -y apt-transport-https
   sudo apt install -y network-manager-gnome volumeicon-alsa pulseaudio pavucontrol fonts-arphic-uming
   #sudo apt install -y fcitx-googlepinyin
