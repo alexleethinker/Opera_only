@@ -13,6 +13,8 @@ function install_PACKAGES {
   sudo apt install -y network-manager-gnome volumeicon-alsa pulseaudio pavucontrol fonts-arphic-uming
   #sudo apt install -y fcitx-googlepinyin
   sudo add-apt-repository 'deb http://httpredir.debian.org/debian/ stretch main contrib non-free'
+  sudo add-apt-repository 'deb http://ftp.de.debian.org/debian sid main contrib' #flash-plugin
+  sudo apt install flashplugin-nonfree
   sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
   wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
   sudo apt update
