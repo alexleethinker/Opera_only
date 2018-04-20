@@ -8,24 +8,24 @@ function install_PACKAGES {
   apt -y purge lynx memtester unixodbc python-* odbcinst-* sudo tcpdump ttf-*
   
   echo "Installing packages"
-  sudo apt install -y software-properties-common fcitx ttf-wqy-zenhei
-  sudo apt install -y xorg
-  sudo apt install -y sakura
-  sudo apt install -y xfce4-power-manager 
-  sudo apt install -y apt-transport-https
-  sudo apt install -y network-manager-gnome volumeicon-alsa pulseaudio pavucontrol fonts-arphic-uming
-  sudo apt install -y fcitx-googlepinyin
-  sudo add-apt-repository 'deb http://httpredir.debian.org/debian/ stretch main contrib non-free'
-  sudo add-apt-repository 'deb http://ftp.de.debian.org/debian sid main contrib' #flash-plugin
-  sudo apt install flashplugin-nonfree
-  sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
+  apt install -y software-properties-common fcitx ttf-wqy-zenhei
+  apt install -y xorg
+  apt install -y sakura
+  apt install -y xfce4-power-manager 
+  apt install -y apt-transport-https
+  apt install -y wicd volumeicon-alsa pulseaudio pavucontrol fonts-arphic-uming
+  apt install -y fcitx-googlepinyin
+  add-apt-repository 'deb http://httpredir.debian.org/debian/ stretch main contrib non-free'
+  add-apt-repository 'deb http://ftp.de.debian.org/debian sid main contrib' #flash-plugin
+  add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
   wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
-  sudo apt update
-  sudo apt-get install firmware-iwlwifi
-  sudo modprobe -r iwlwifi ; modprobe iwlwifi
-  sudo apt -y install opera-stable
-  sudo apt -y install openbox obmenu
-  sudo apt -y install slim
+  apt update
+  apt install -y flashplugin-nonfree
+  apt install -y firmware-iwlwifi
+  modprobe -r iwlwifi ; modprobe iwlwifi
+  apt -y install opera-stable
+  apt -y install openbox obmenu
+  apt -y install slim
   
   apt autoremove && apt clean
 
