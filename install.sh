@@ -4,7 +4,9 @@ function install_PACKAGES {
 
   sudo apt-get update
   echo ""
-
+  apt -y purge apache2-* bind9-* xinetd samba-* nscd-* portmap sendmail-* sasl2-bin
+  apt -y purge lynx memtester unixodbc python-* odbcinst-* sudo tcpdump ttf-*
+  
   echo "Installing packages"
   sudo apt install -y software-properties-common fcitx ttf-wqy-zenhei
   sudo apt install -y xorg
@@ -12,7 +14,7 @@ function install_PACKAGES {
   sudo apt install -y xfce4-power-manager 
   sudo apt install -y apt-transport-https
   sudo apt install -y network-manager-gnome volumeicon-alsa pulseaudio pavucontrol fonts-arphic-uming
-  #sudo apt install -y fcitx-googlepinyin
+  sudo apt install -y fcitx-googlepinyin
   sudo add-apt-repository 'deb http://httpredir.debian.org/debian/ stretch main contrib non-free'
   sudo add-apt-repository 'deb http://ftp.de.debian.org/debian sid main contrib' #flash-plugin
   sudo apt install flashplugin-nonfree
@@ -23,7 +25,9 @@ function install_PACKAGES {
   sudo modprobe -r iwlwifi ; modprobe iwlwifi
   sudo apt -y install opera-stable
   sudo apt -y install openbox obmenu
-  #sudo apt -y install sddm
+  sudo apt -y install slim
+  
+  apt autoremove && apt clean
 
 }
 
@@ -35,7 +39,7 @@ function configure {
 
 function main {
   install_PACKAGES
-  configure
+  #configure
 }
 
 main
