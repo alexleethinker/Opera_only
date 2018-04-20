@@ -11,7 +11,7 @@ function install_PACKAGES {
   apt install -y software-properties-common fcitx ttf-wqy-zenhei
   apt install -y xorg
   apt install -y sakura
-  apt install -y xfce4-power-manager 
+  apt install -y xfce4-power-manager dirmngr 
   apt install -y apt-transport-https
   apt install -y wicd volumeicon-alsa pulseaudio pavucontrol fonts-arphic-uming
   apt install -y fcitx-googlepinyin
